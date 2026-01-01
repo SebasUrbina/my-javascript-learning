@@ -1,0 +1,15 @@
+{
+  "name": "my-javascript-learning",
+  "version": "1.0.0",
+  "description": "Follow these steps to set up your JavaScript development environment:",
+  "main": "scripts/addFive.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
