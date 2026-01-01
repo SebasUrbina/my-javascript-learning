@@ -6,7 +6,7 @@ void f(std::vector<int> v){
     v.push_back(99);
 }
 
-int main(){
+int prueba_funcion(){
     std::vector<int> v = {1,2,3};
     f(v);
     std::cout << "Size: " << v.size() << std::endl;
@@ -30,6 +30,44 @@ int main2(){
 
 // Uso de "const"
 // “Esta función promete NO modificar esto”
-void funcion_con_constante(const std::vector<int>& v){
-    v.push_back(99); // Error
+// void funcion_con_constante(const std::vector<int>& v){
+//     v.push_back(99); // Error
+// }
+
+
+
+int sumar(int a, int b){
+    return a + b;
 }
+
+int pow(int x){
+    return x * x;
+}
+
+std::string is_even(int x){
+    if (x % 2 == 0){
+        return "El numero " + std::to_string(x) + " es par";
+    } else {
+        return "El numero " + std::to_string(x) + " es impar";
+    }
+}
+
+int main(){
+    int a; // -2,147,483,648  a  2,147,483,647
+    int b;
+
+    std::cout << "Ingrese el primer numero: ";
+    std::cin >> a;
+    std::cout << "Ingrese el segundo numero: ";
+    std::cin >> b;
+
+    int resultado = sumar(a, b);
+    std::cout << "La suma es: " << resultado << std::endl;
+
+    int resultado2 = pow(a);
+    std::cout << "El cuadrado es: " << resultado2 << std::endl;
+
+    std::cout << is_even(a) << std::endl;
+    return 0;
+}
+    
